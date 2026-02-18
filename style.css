@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial;
+    background: #111;
+    color: white;
+}
+
+h2 { 
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 999;
+}
+
+/* Calibration dot */
+#calibrationDot {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Gaze dot */
+#dot {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: yellow;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    pointer-events: none;
+}
+
+#uiButtons {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 70px;
+}
+
+#uiButtons button {
+    padding: 80px 80px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 24px;
+}
+
+#cameraFeed, #snapshotCanvas {
+    position: fixed;
+    top: 60px;
+    left: 20px;
+    border: 2px solid white;
+}
