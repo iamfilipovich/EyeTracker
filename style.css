@@ -13,7 +13,6 @@ h2 {
     z-index: 999;
 }
 
-/* Calibration dot */
 #calibrationDot {
     position: fixed;
     width: 30px;
@@ -23,7 +22,6 @@ h2 {
     cursor: pointer;
 }
 
-/* Gaze dot */
 #dot {
     position: fixed;
     width: 20px;
