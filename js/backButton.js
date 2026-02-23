@@ -25,18 +25,15 @@ export function checkGazeOnBackButton(dotX, dotY){
     }
 }
 
-// Klik na back button gasi igru i vraća menu
 export function initBackButton(){
     backButton.addEventListener("click", () => {
-        stopGazeGame(); // ugasi igru
-        backButton.style.display = "none"; // sakrij button
+        stopGazeGame(); 
+        backButton.style.display = "none"; 
 
-        // Prikaži start button
         const centerButton = document.getElementById("centerButton");
         centerButton.disabled = false;
         centerButton.style.opacity = 1;
 
-        // Prikaži main menu elemente (ako ih ima)
         document.getElementById("menuContainer");
 
         setAppState("MENU");
