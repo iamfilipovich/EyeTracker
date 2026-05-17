@@ -1,4 +1,4 @@
-import { initGazeGame } from './gazeGame.js'; // uvezi funkciju za igru
+import { initGazeGame } from './gazeGame.js';
 import {  getAppState, setAppState } from './app.js';
 
 const centerButton = document.getElementById("centerButton");
@@ -26,7 +26,6 @@ export function checkGazeOnCenterButton(dotX, dotY){
     }
 }
 
-// Promjena ovdje: klik na button pokreće igru
 export function initCenterButton(){
     centerButton.addEventListener("click", () => {
         if(getAppState() !== "MENU") return;
@@ -34,7 +33,6 @@ export function initCenterButton(){
         setAppState("GAME");
         initGazeGame();
 
-        //Onemoguci klik
         centerButton.disabled = true;
         centerButton.style.opacity = 0.5;
     });

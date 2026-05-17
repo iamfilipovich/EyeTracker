@@ -8,7 +8,7 @@
 <body>
 
 <div id="calibrationContainer">
-    <h2>Calibration: Click the red dot 5 times at each position</h2>
+    <!-- <h2>Calibration: Click the red dot 5 times at each position</h2> -->
     <div id="calibrationDot"></div>
 </div>
 
@@ -40,6 +40,33 @@
         ">
     Back
 </button>
+</div>
+
+<h2 id="scoreText"
+    style="
+        position:absolute;
+        top:35px;
+        left:20px;
+        color:white;
+    ">
+    Score: 0
+</h2>
+
+<div id="leaderboard"
+     style="
+        position:absolute;
+        right:20px;
+        top:20px;
+        padding:20px;
+        border-radius:10px;
+        width:250px;
+        color:white;
+        pointer-events: none;
+     ">
+
+    <h3>Leaderboard</h3>
+
+    <ul id="leaderboardList"></ul>
 </div>
 
 <script src="libs/webgazer.js"></script>

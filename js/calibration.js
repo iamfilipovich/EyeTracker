@@ -61,9 +61,5 @@ export function finishCalibration(){
     document.getElementById("calibrationContainer").style.display = "none";
     document.getElementById("mainApp").style.display = "block";
 
-    calibrationData.forEach(p => {
-        webgazer.recordScreenPosition(p.x, p.y, "click");
-    });
-    
     setAppState("MENU");
 }

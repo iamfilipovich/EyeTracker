@@ -3,8 +3,8 @@ export let smoothY = window.innerHeight / 2;
 export let lastX = smoothX;
 export let lastY = smoothY;
 
-const SMOOTH_FACTOR = 0.15;
-const MIN_MOVE = 2;
+const SMOOTH_FACTOR = 0.08;
+const MIN_MOVE = 1;
 
 const dot = document.getElementById("dot");
 

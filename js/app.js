@@ -1,7 +1,6 @@
 import {moveCalibrationDot, finishCalibration} from './calibration.js';
 import {checkGazeOnCenterButton, initCenterButton} from './gazeButton.js';
 import {checkGazeOnBackButton, initBackButton} from './backButton.js';
-// import {initGazeMenu} from './gazeMenu.js';
 import {checkGazeGame} from './gazeGame.js';
 
 let appState = "CALIBRATION";
